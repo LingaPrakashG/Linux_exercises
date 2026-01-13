@@ -1,0 +1,102 @@
+# 🐧 Linux Practice Questions 
+
+## Topic
+Linux Basics, Files, Directories, Users, Groups, and Viewing Commands
+
+## 🧑‍💻 Section 1: User Management (1–15)
+
+1. Create a normal user named `user10`.
+2. Create another user named `user20` with a specific UID.
+3. Verify that both users exist in the system.
+4. Check the UID and GID of `user10`.
+5. Set a password for `user10`.
+6. Force `user10` to change the password at next login.
+7. Lock the account of `user20`.
+8. Verify whether `user20` is locked.
+9. Unlock the account of `user20`.
+10. Change the login shell of `user10`.
+11. Add a comment field to `user20`.
+12. Rename `user10` to `user_one`.
+13. Verify that the UID remains unchanged after renaming.
+14. Check the home directory of `user_one`.
+15. Delete `user20` without removing its home directory.
+
+---
+
+## 👥 Section 2: Group Management (16–25)
+
+16. Create a group named `groupA`.
+17. Create another group named `groupB`.
+18. Add `user_one` to `groupA`.
+19. Add `user_one` to `groupB` as a secondary group.
+20. Verify group membership of `user_one`.
+21. Change the primary group of `user_one`.
+22. Remove `user_one` from `groupB`.
+23. Rename the group `groupA` to `teamA`.
+24. Verify the new group name exists.
+25. Delete the group `groupB`.
+
+---
+
+## 📁 Section 3: Directory Operations (26–35)
+
+26. Create a directory named `project`.
+27. Inside `project`, create directories `src`, `bin`, and `logs`.
+28. Navigate to the `src` directory.
+29. Move back to the `project` directory using a relative path.
+30. List all directories in detailed format.
+31. Create a nested directory structure `data/input/raw`.
+32. Verify the complete directory tree.
+33. Attempt to remove a non-empty directory using `rmdir`.
+34. Remove an empty directory using `rmdir`.
+35. Remove the entire `project` directory recursively.
+
+---
+
+## 📄 Section 4: File Operations (36–50)
+
+36. Create a file named `fileA.txt`.
+37. Create multiple files `fileB.txt`, `fileC.txt`, and `fileD.txt`.
+38. List all files including hidden files.
+39. Display file details using long listing format.
+40. Copy `fileA.txt` to `fileA_backup.txt`.
+41. Move `fileB.txt` to another directory.
+42. Rename `fileC.txt` to `fileC_old.txt`.
+43. Delete `fileD.txt`.
+44. Attempt to delete a directory using `rm` without options.
+45. Delete a directory using recursive remove.
+46. Create a file and update its timestamp.
+47. Verify file size and modification time.
+48. Remove multiple files using a single command.
+49. Recreate deleted files.
+50. Verify which files currently exist.
+
+---
+
+## 📖 Section 5: File Viewing Commands (51–60)
+
+51. Create a text file named `notes.txt`.
+52. Add at least 10 lines of text to `notes.txt`.
+53. Display the entire file using a single command.
+54. Display the file with line numbers.
+55. View the file using a paging command.
+56. Exit from the paging view.
+57. Display only the first 5 lines of the file.
+58. Display only the last 5 lines of the file.
+59. Append additional lines to `notes.txt`.
+60. View only the newly added lines.
+
+---
+
+## 🔍 Section 6: Navigation and Information (61–70)
+
+61. Display your current working directory.
+62. Navigate to your home directory using a shortcut.
+63. Navigate to `/etc` using an absolute path.
+64. Return to the previous directory.
+65. Identify the difference between absolute and relative paths.
+66. Display the currently logged-in users.
+67. Display only your username.
+68. Check login history of the system.
+69. Verify users with UID greater than or equal to 1000.
+70. Cross-check user information from `/etc/passwd`.
