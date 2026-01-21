@@ -1,0 +1,47 @@
+
+### Tasks
+
+1. Locate the `useradd` binary on the system.
+2. Check the owner and group of the `useradd` binary.
+3. Verify the default permissions of the `useradd` command.
+4. Identify whether SUID is enabled by default or not.
+5. Set the **SUID** permission on the `useradd` binary.
+6. Verify that the SUID bit is set successfully.
+7. Note the permission changes before and after SUID is applied.
+
+### Tasks
+
+8. Create a directory named `sgiddir`.
+9. Assign a group to the directory.
+10. Grant required permissions to group members.
+11. Set the **SGID** permission on the directory.
+12. Verify that the SGID bit is set.
+13. Create a file inside `sgiddir`.
+14. Check the group ownership of the newly created file.
+15. Remove the SGID permission from the directory.
+16. Verify the change.
+
+### Tasks
+
+17. Create a directory named `sharedir`.
+18. Assign permissions so multiple users can create files.
+19. Set the **Sticky Bit** on the directory.
+20. Verify that the sticky bit is set.
+21. Create files using different users.
+22. Attempt to delete another user’s file.
+23. Observe the behavior with sticky bit enabled.
+24. Remove the sticky bit from the directory.
+25. Observe the difference after removal.
+
+#####################################################################################################################################
+1. Add groups csk and rcb .
+2. Create users dhoni, Raina, Virat , and Faf.
+3. Add users Dhoni and Raina to the csk group.
+4. Add users Virat and Faf to the rcb group.
+5. Create the directory cricket in /.
+6. Create directories kings and challengers inside the cricket directory.
+7. Set full permissions for the csk group on the kings directory and full permissions for the rcb group on the challengers directory.
+8. Change the group ownership of the kings directory to csk and the challengers directory to rcb.
+9. Remove all permissions for others from both the kings and challengers directories.
+
+Now, only members of the csk group will have access to the kings directory, and only members of the rcb group will have access to the challengers directory.
